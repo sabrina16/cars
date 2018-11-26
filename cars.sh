@@ -23,7 +23,7 @@ case "$CHOICE" in
      echo "$YEAR:$MAKE:$MODEL" >> My_old_cars;;
 
 "2") sort My_old_cars
-     echo "($My_old_cars)";;
+     echo "$My_old_cars";;
 
 "3") echo "Goodbye!"
      break;;
