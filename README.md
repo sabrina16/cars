@@ -1,6 +1,6 @@
 # cars
 #### Shell script program CPSC 298
-#### Program helps users maintain an inventory of old cars. This repo contains a file that stores newly added cars and cars.sh program.
+#### Program helps users maintain an inventory of old cars. This repo contains a file called My_old_cars that newly added cars append to. 
 
 #### The user has 3 choices to select from 
 
