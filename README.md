@@ -1,9 +1,9 @@
 # cars
 #### Shell script program CPSC 298
-#### Program helps users maintain an inventory of old cars. Each time the user adds a car, the values are appended to a file called My_old_cars. 
+#### Program helps users maintain an inventory of old cars. Each time the user adds a car, the values are appended to a file called My_old_cars. The cars are sorted by year and then displayed to the user if choice #2 is selected. 
 
-#### The user has 3 choices to select from 
+#### The user has 3 choices to select from:
 
-1. Add a car
-2. List the cars in the inventory file
-3. Exit the program 
+* Add a car
+* List the cars in the inventory file
+* Exit the program 
