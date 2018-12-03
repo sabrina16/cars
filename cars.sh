@@ -1,35 +1,41 @@
 #! /bin/bash
-# cars.sh
-# Sabrina Toubbeh
+#cars.sh
+#Sabrina Toubbeh
 
-while true;
-do
- echo "1) Add a car"
- echo "2) List the cars in the inventory file"
- echo "3) Exit the program"
- echo
- echo "Enter your choice: "
- read CHOICE
- echo
+MENU_CHOICE=3
 
-case "$CHOICE" in
-
-"1") echo "Enter the year:"
-     read YEAR
-     echo "Enter the make:"
-     read MAKE
-     echo "Enter the model:"
-     read MODEL
-     echo "$YEAR:$MAKE:$MODEL" >> My_old_cars;;
-
-"2") sort My_old_cars
-     echo "$My_old_cars";;
-
-"3") echo "Goodbye!"
-     break;;
-
-*) echo "Invalid choice, ('$CHOICE' given)"
-   break;;
-esac
-
+while [ "$MENU_CHOICE" !=  "q" ]; do 
+	
+	echo "Please pick one choice: "
+	echo "a) Add a car"
+	echo "v) View list of cars"
+	echo -e "q) Quit \n"
+	
+	echo "Choose an option: "
+	read MENU_CHOICE
+	
+	case "$MENU_CHOICE" in
+	
+	"a")
+		echo "Year of the car? "
+		read YEAR
+		echo "Make of the car? "
+		read MAKE
+		echo "Model of the car? "
+		read MODEL
+			
+		echo "$YEAR:$MAKE:$MODEL" >> My_old_cars;;
+	
+	"v")
+		echo
+		sort My_old_cars | tr ":" " "
+		echo ;;
+	
+	"q")
+		 echo "Goodbye";;
+	
+	*)
+		 echo -e "ERROR\n";;
+	
+	esac
 done
