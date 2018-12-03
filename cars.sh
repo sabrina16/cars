@@ -17,11 +17,11 @@ while [ "$MENU_CHOICE" !=  "q" ]; do
 	case "$MENU_CHOICE" in
 	
 	"a")
-		echo "Year of the car? "
+		echo "Year of the car "
 		read YEAR
-		echo "Make of the car? "
+		echo "Make of the car "
 		read MAKE
-		echo "Model of the car? "
+		echo "Model of the car "
 		read MODEL
 			
 		echo "$YEAR:$MAKE:$MODEL" >> My_old_cars;;
