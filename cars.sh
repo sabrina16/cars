@@ -4,19 +4,19 @@
 
 MENU_CHOICE=3
 
-while [ "$MENU_CHOICE" !=  "3" ]; do 
+while [ "$MENU_CHOICE" !=  "q" ]; do 
 	
 	echo "Please pick one choice: "
-	echo "A) Add a car"
-	echo "V) View list of cars"
-	echo -e "Q) Quit \n"
+	echo "a) Add a car"
+	echo "v) View list of cars"
+	echo -e "q) Quit \n"
 	
 	echo "Choose an option: "
 	read MENU_CHOICE
 	
 	case "$MENU_CHOICE" in
 	
-	"A")
+	"a")
 		echo "Year of the car "
 		read YEAR
 		echo "Make of the car "
@@ -26,12 +26,12 @@ while [ "$MENU_CHOICE" !=  "3" ]; do
 			
 		echo "$YEAR:$MAKE:$MODEL" >> My_old_cars;;
 	
-	"V")
+	"v")
 		echo
 		sort My_old_cars | tr ":" " "
 		echo ;;
 	
-	"Q")
+	"q")
 		 echo "Goodbye";;
 	
 	*)
