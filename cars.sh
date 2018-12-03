@@ -4,7 +4,7 @@
 
 MENU_CHOICE=3
 
-while [ "$MENU_CHOICE" !=  "q" ]; do 
+while [ "$MENU_CHOICE" !=  "3" ]; do 
 	
 	echo "Please pick one choice: "
 	echo "1) Add a car"
